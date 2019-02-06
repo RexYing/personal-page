@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rex Ying's Academic Personal Website - Rex Ying Research</title>
+<meta name="description" content="Algorithm Math Computer Science" />
+<meta name="keywords" content="Rex Ying, Algorithm, Math, Computer science, Data structure, Joy of thinking" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+		<meta name="google-site-verification" content="FcUURdmxlad0hZLlUjd0uwKrJJon33UO5n2t6yF9Atc" />
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                       displayMath: [['\\[','\\]'], ['$$','$$']]}});
+</script>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript" src="http://joy-of-thinking.weebly.com/files/theme/md5.js"></script>
+
+<script src="http://joy-of-thinking.weebly.com/files/theme/jquery.easing.1.3.js"></script>
+<script src="http://joy-of-thinking.weebly.com/files/theme/jquery.touchSwipe.min.js"></script>
+<script src="http://joy-of-thinking.weebly.com/files/theme/jquery.liquid-slider.min.js"></script>
+<script>
+/* If installing in the footer, you won't need $(function() {} */
+$(function(){
+     $('#slider-id').liquidSlider();
+});
+</script>
+
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1549495907" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "862706511123919344";
+			com_userID = "23903170";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"> window._W = window._W || {}; _W.showV2Footer = 1; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"803132933525858267","title":"Research","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"343622928811626101","title":"Resources","url":"resources.html","target":"","nav_menu":false,"nonclickable":false},{"id":"878640929252918211","title":"Interests","url":"interests.html","target":"","nav_menu":false,"nonclickable":false},{"id":"651817441774364961","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+			"803132933525858267",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="header-page  wsite-page-index  full-width-off  wsite-theme-light"><!-- header-wrap -->
+	<div id="header-wrap">
+		<div id="header" class="content-wrap container">
+			<label id="nav-trigger" class="hamburger" for="mobile-trigger"></label>
+			<div id="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Rex Ying's Academic Personal Website</span>
+	
+	</a>
+
+</span></div>
+			<div id="header-right">
+				<div id="nav" class="nav"><ul class="wsite-menu-default">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Research
+			</a>
+			
+		</li>
+		<li id="pg343622928811626101" class="wsite-menu-item-wrap">
+			<a
+						href="resources.html"
+				class="wsite-menu-item"
+				>
+				Resources
+			</a>
+			
+		</li>
+		<li id="pg878640929252918211" class="wsite-menu-item-wrap">
+			<a
+						href="interests.html"
+				class="wsite-menu-item"
+				>
+				Interests
+			</a>
+			
+		</li>
+		<li id="pg651817441774364961" class="wsite-menu-item-wrap">
+			<a
+						href="contact.html"
+				class="wsite-menu-item"
+				>
+				Contact
+			</a>
+			
+		</li>
+</ul>
+</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header-wrap -->
+
+	<div id="wrapper">
+		<div id="wrapper-content">
+			<div id="navmobile" class="nav"><ul class="wsite-menu-default">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Research
+			</a>
+			
+		</li>
+		<li id="pg343622928811626101" class="wsite-menu-item-wrap">
+			<a
+						href="resources.html"
+				class="wsite-menu-item"
+				>
+				Resources
+			</a>
+			
+		</li>
+		<li id="pg878640929252918211" class="wsite-menu-item-wrap">
+			<a
+						href="interests.html"
+				class="wsite-menu-item"
+				>
+				Interests
+			</a>
+			
+		</li>
+		<li id="pg651817441774364961" class="wsite-menu-item-wrap">
+			<a
+						href="contact.html"
+				class="wsite-menu-item"
+				>
+				Contact
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+			<div id="main-content">
+
+				<!-- banner-wrap -->
+				<div id="banner-wrap">
+					<div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section" style="height: 350px;" >
+		<div class="wsite-section-content">
+			
+						<div id="banner">
+				<div class="wsite-section-elements">
+					<h2 class="wsite-content-title" style="text-align:center;">Rex (Zhitao) Ying</h2>
+				</div>
+			</div>
+					
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+				<!-- end banner-wrap -->
+
+				<div id="main-wrap" class="content-wrap">
+					<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-12" style="height: auto;" >
+		<div class="wsite-section-content">
+						<div class="container">
+			<div class="wsite-section-elements">
+				<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:46.116504854369%; padding:0 15px;">
+					
+						
+
+<span class='imgPusher' style='float:left;height:0px'></span><span style='display: table;width:auto;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'><a href='https://drive.google.com/file/d/1dRuJfgrIYWks9ZJ63zRrkqvVF7TfXxkU/view?usp=sharing' target='_blank'><img src="uploads/2/3/9/0/23903170/2017-by-hector-3-medium_1_orig.jpg" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span>
+<div class="paragraph" style="display:block;"><br /><br /></div>
+<hr style="width:100%;clear:both;visibility:hidden;"></hr>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:53.883495145631%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"><font size="3"><span>I'm currently a second-year&nbsp;computer science&nbsp;PhD&nbsp;student at&nbsp;Stanford&nbsp;University,&nbsp;advised by&nbsp;</span><a href="http://cs.stanford.edu/~jure/" target="_blank">Jure Leskovec</a><span>. My&nbsp;</span><span>research</span><span>&nbsp;generally focuses on&nbsp;developing&nbsp;machine learning algorithms applied to graph-structured data.</span><br /><br /><span>I have worked on developing generalized graph convolutional networks that are scalable to web-scale datasets, with applications in recommender systems, anomaly dection and biology. I'm also interested in&nbsp;deep generative models for graphs&nbsp; and multi-hop&nbsp;knowledge graph reasoning.</span></font><br /><br /><span><font size="3">I graduated from Duke University in 2016 with the highest distinction. I majored in computer science and mathematics. I did research&nbsp;in geometric algorithms,&nbsp;computational topology, numerical analysis&nbsp;and signal processing.<br /><br />Email: rexying AT stanford.edu</font></span></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		</div>
+					</div>
+
+	</div>
+</div>
+<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-2"  >
+		<div class="wsite-section-content">
+						<div class="container">
+			<div class="wsite-section-elements">
+				
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title">News</h2>
+
+<div class="paragraph"><ul><li><font size="4"><strong style="">May 2018</strong>: Gave a poster presentation at <a href="https://sdsi.stanford.edu/spring-2018-workshop" target="_blank" style="">SDSI </a>workshop.</font></li><li><font size="4"><strong>May 2018</strong>:&nbsp;GraphRNN code is made public at&nbsp;<a href="https://github.com/JiaxuanYou/graph-generation" target="_blank" style="">https://github.com/JiaxuanYou/graph-generation&nbsp;</a>. Feel free to make issues if there's any&nbsp;question:)</font></li><li><font size="4">Looking forward to an internship in&nbsp;Facebook AI Research,&nbsp;NYC in summer 2018!</font></li><li><span style="color:rgb(10, 10, 10)"><font size="4"><strong>April&nbsp; 2018</strong>: Gave a tutorial&nbsp;"Representation Learning on Networks" at WWW 2018 with Jure Leskovec, William L. Hamilton and Rok Sosic.<br />Website:&nbsp;</font></span><font size="3"><a href="http://snap.stanford.edu/proj/embeddings-www/" target="_blank">http://snap.stanford.edu/proj/embeddings-www/</a></font></li><li><span style="color:rgb(10, 10, 10)"><font size="4">&#8203;<strong>Dec 2017</strong>:&nbsp;</font></span><font size="4"><font color="#2a2a2a">One main-track poster presentation at NIPS 2017 and an invited talk at the NIPS MLTrain Workshop on <a href="https://github.com/williamleif/GraphSAGE" target="_blank">GraphSAGE</a>.</font></font></li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title"><font size="6"><font color="#3f3f3f">PhD Research</font></font></h2>
+
+<h2 class="wsite-content-title">Graph Representation Learning<br /></h2>
+
+<div class="paragraph">When applying machine learning techniques to graph-structured data, an important step is to map nodes in the graph to dense vector representations (embeddings)&nbsp;that describe the neighborhood structure of the nodes, so that machine learning algorithms can take these node&nbsp;embeddings as input features. This is analogous to word embeddings in NLP, where words are mapped to embeddings and used for various downstream tasks.<br /><br />My work includes using deep convolutional models to learn graph/node embeddings.<br />&nbsp;<br />Common applications include machine learning for social networks, recommender systems, biological networks, knowledge graph, IoT etc.</div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div class="paragraph"></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/arn-low_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">&#8203;Learning&nbsp;a&nbsp;Relational&nbsp;World&nbsp;Model via&nbsp;Curiosity-Driven&nbsp;Exploration</h2>
+
+<div class="paragraph">In submission</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/pgnn_1_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Position-aware Graph Neural Networks</h2>
+
+<div class="paragraph">In submission</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/hag_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Redundancy-Free Computation Graphs for Graph Neural Networks&#8203;</h2>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/pool-vis_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Hierarchical Graph Representation<br />&#8203;Learning with&nbsp;Differentiable Pooling</h2>
+
+<div class="paragraph"><font size="5">NIPS&nbsp; 2018 (spotlight)</font></div>
+
+<div class="paragraph">Rex Ying, Jiaxuan You, Christopher Morris, William L. Hamilton, Jure Leskovec</div>
+
+<div class="paragraph"><a href="https://arxiv.org/abs/1806.08804" target="_blank">Link</a>; DiffPool&nbsp;<a href="https://github.com/RexYing/diffpool" target="_blank">Code</a></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/gcpn_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation</h2>
+
+<div class="paragraph"><span><font size="5">NIPS&nbsp;2018 (spotlight)</font></span></div>
+
+<div class="paragraph">Jiaxuan You*, Bowen Liu*, Rex Ying, Vijay S. Pande, Jure Leskovec</div>
+
+<div class="paragraph"><a href="https://arxiv.org/abs/1806.02473" target="_blank">Link</a>; GCPN&nbsp;<a href="https://github.com/bowenliu16/rl_graph_generation" target="_blank">Code</a></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/published/grid-demo.png?1526949877" alt="Picture" style="width:328;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">GraphRNN:&nbsp;&#8203;Deep Generative Models of Graphs</h2>
+
+<div class="paragraph"><font size="5">ICML 2018</font></div>
+
+<div class="paragraph"><font size="3"><font color="#2a2a2a">Jiaxuan You*, Rex Ying*, Xiang Ren, William L. Hamilton, Jure Leskovec</font></font></div>
+
+<div class="paragraph">Link:&nbsp;&#8203;https://arxiv.org/abs/1802.08773<br /><br />Code: https://github.com/JiaxuanYou/graph-generation</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/model_1_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">&#8203;Graph Convolutional Networks for Web-Scale Recommender Systems</h2>
+
+<div class="paragraph"><font size="5">KDD 2018 (oral)</font></div>
+
+<div class="paragraph"><font size="3">Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, Jure Leskovec&nbsp;</font></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a>
+<img src="uploads/2/3/9/0/23903170/sample-and-agg_1_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">&#8203;Inductive Representation Learning on Large Graphs</h2>
+
+<div class="paragraph"><font color="#2a2a2a"><font size="5">&#8203;NIPS 2017</font></font></div>
+
+<div class="paragraph"><font color="#2a2a2a"><font size="3">William L. Hamilton*, Rex Ying*, Jure Leskovec&#8203;</font></font></div>
+
+<div class="paragraph">Link:&nbsp;<a href="https://arxiv.org/abs/1706.02216" target="_blank">&#8203;https://arxiv.org/abs/1706.02216</a><br /><br />Code:&nbsp;&#8203;<a href="https://github.com/williamleif/GraphSAGE" target="_blank">https://github.com/williamleif/GraphSAGE</a></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-medium " style="padding-top:5px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:left">
+<a>
+<img src="uploads/2/3/9/0/23903170/screenshot-1_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:49.999999999999%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">Representation Learning on Graphs: <br />&#8203;Methods and Applications</h2>
+
+<div class="paragraph"><em style="color: rgb(34, 34, 34);"><font size="5">IEEE Data Engineering Bulletin.</font></em><span style="color: rgb(34, 34, 34);"><font size="5">&nbsp;2017</font></span></div>
+
+<div class="paragraph"><span style="color:rgb(42, 42, 42)"><font size="3">William L. H</font></span><span style="color:rgb(42, 42, 42)"><font size="3">amilton, Rex Ying, Jure Leskovec&#8203;</font></span></div>
+
+<div class="paragraph"><font size="3">Link:&nbsp;&#8203;</font><a href="https://arxiv.org/abs/1709.05584" target="_blank"><font size="3">arxiv.org/abs/1709.05584</font></a></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<h2 class="wsite-content-title">Rotations</h2>
+
+<div class="paragraph"><ul><li>In spring 2016, I rotated with Professor <a href="http://theory.stanford.edu/~valiant/" target="_blank">Greg Valiant</a>, working on efficient approximate maximum inner product search.</li><li>In fall 2016, I&nbsp;rotated&nbsp;with Professor <a href="https://geometry.stanford.edu/member/guibas/" target="_blank">Leo Guibas</a>, working on inferring driving state (velocity, acceleration, steering angle etc.) based on cars' front camera videos.</li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<h2 class="wsite-content-title"><strong><font size="6"><font color="#515151">Undergraduate Research</font></font></strong></h2>
+
+<div class="paragraph">My undergrad research topics include geometric algorithms, numerical analysis and signal processing. I also did several other projects in image processing, computational topology during my senior year. During my summer internships at Google Ads,&nbsp;I worked on using machine learning to detect API&nbsp;queries using&nbsp;malicious script&nbsp;and de-biasing user rating.<br /><br />Here are some of my researches at Duke.<br /></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:28.252427184466%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/trajectory2-dp-surf_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:71.747572815534%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title">A Simple Efficient Approximation Algorithm for Dynamic&nbsp;Time Warping</h2>
+
+<div class="paragraph"><font size="4"><span style="font-weight:normal"><font color="#2a2a2a">ACM SIGSPATIAL 2016</font></span></font></div>
+
+<div class="paragraph"><span style="color:rgb(51, 51, 51)">Rex Ying, Jiangwei Pan, Kyle Fox, Pankaj K. Agarwal&nbsp;</span>&#8203;</div>
+
+<div class="paragraph">Dynamic time warping (DTW) is a widely used curve similarity measure. &nbsp;We present a simple and efficient (1 + eps)-<br />approximation algorithm for DTW between a pair of point&nbsp;sequences.&nbsp;Although an&nbsp;algorithm with similar asymptotic time complexity was presented in our previous paper,&nbsp;&nbsp;our algorithm is&nbsp;considerably simpler and more efficient in practice.&nbsp;&nbsp;Our experiments on&nbsp;both synthetic and real-world data sets (GeoLife trajectories) show that it is an&nbsp;order of magnitude faster than the standard exact DP algorithm on point sequences of length 5,000 or more while keeping the approximation error within 5&ndash;10%. For input size of 50,000, our algorithm is more than 200 times faster.</div>
+
+<div><div style="margin: 10px 0 0 -10px">
+<a title="Download file: paper.pdf" download href="uploads/2/3/9/0/23903170/dtw_application.pdf"><img src="http://www.weebly.com/weebly/images/file_icons/pdf.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" /></a><div style="float: left; text-align: left; position: relative;"><table style="font-size: 12px; font-family: tahoma; line-height: .9;"><tr><td colspan="2"><b> paper.pdf</b></td></tr><tr style="display: none;"><td>File Size:  </td><td>1186 kb</td></tr><tr style="display: none;"><td>File Type:  </td><td> pdf</td></tr></table><a title="Download file: paper.pdf" download href="uploads/2/3/9/0/23903170/dtw_application.pdf" style="font-weight: bold;">Download File</a></div>
+</div>
+
+<hr style="clear: both; width: 100%; visibility: hidden"></hr></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -20px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:28.461538461538%; padding:0 20px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/2/3/9/0/23903170/boundary-partition_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:71.538461538462%; padding:0 20px;">
+					
+						
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5">Approximating Dynamic Time Warping<br />and Edit Distance for a Pair of Point<br />Sequences</font></h2>
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="4"><span style="font-weight:normal">SoCG 2016</span></font></h2>
+
+<div class="paragraph">Pankaj K. Agarwal,&nbsp;<span style="color:rgb(51, 51, 51)">Kyle Fox, Jiangwei Pan, Rex Ying&nbsp;</span>&#8203;</div>
+
+<div class="paragraph" style="text-align:left;">&#8203;In this paper, I present a first subquadratic-time approximation schemes for dynamic time warping (DTW) and edit<br />distance (ED) of several natural families of point sequences in R^d for some fixed dimension d&gt;1. Our main idea is to&nbsp;use&nbsp;an algorithm similar to the&nbsp;well-separated pair&nbsp;decomposition (WSPD) to cluster the weights&nbsp;table into overlapping&nbsp;rectangles&nbsp;of similar weights, and compute shortest paths through&nbsp;the boundaries of the rectangles.</div>
+
+<div class="paragraph" style="text-align:left;"><strong>The&nbsp;paper is attached below</strong></div>
+
+<div><div style="margin: 10px 0 0 -10px">
+<a title="Download file: Paper.pdf" download href="uploads/2/3/9/0/23903170/dtw.pdf"><img src="http://www.weebly.com/weebly/images/file_icons/pdf.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" /></a><div style="float: left; text-align: left; position: relative;"><table style="font-size: 12px; font-family: tahoma; line-height: .9;"><tr><td colspan="2"><b> Paper.pdf</b></td></tr><tr style="display: none;"><td>File Size:  </td><td>549 kb</td></tr><tr style="display: none;"><td>File Type:  </td><td> pdf</td></tr></table><a title="Download file: Paper.pdf" download href="uploads/2/3/9/0/23903170/dtw.pdf" style="font-weight: bold;">Download File</a></div>
+</div>
+
+<hr style="clear: both; width: 100%; visibility: hidden"></hr></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -20px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:28.461538461538%; padding:0 20px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a>
+<img src="uploads/2/3/9/0/23903170/ying-and-wall-fig-1b-revision1-final_1.png?1476346608" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:71.538461538462%; padding:0 20px;">
+					
+						
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5"><span>EMG</span></font></h2>
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="4" style="font-weight:normal">Journal of Biomechanics 2016</font></h2>
+
+<div class="paragraph">Rex Ying,&nbsp;&#8203;Christine E. Wall</div>
+
+<div class="paragraph" style="text-align:left;">We present a new statistical method and MATLAB script (EMG-Extractor) that includes an adaptive algorithm to discriminate noise regions from electromyography(EMG) that&nbsp;improves the labeling&nbsp;<span>accuracy</span>.</div>
+
+<div><div style="margin: 10px 0 0 -10px">
+<a title="Download file: bm-d-16-00490r1.pdf" download href="uploads/2/3/9/0/23903170/bm-d-16-00490r1.pdf"><img src="http://www.weebly.com/weebly/images/file_icons/pdf.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" /></a><div style="float: left; text-align: left; position: relative;"><table style="font-size: 12px; font-family: tahoma; line-height: .9;"><tr><td colspan="2"><b> bm-d-16-00490r1.pdf</b></td></tr><tr style="display: none;"><td>File Size:  </td><td>1200 kb</td></tr><tr style="display: none;"><td>File Type:  </td><td> pdf</td></tr></table><a title="Download file: bm-d-16-00490r1.pdf" download href="uploads/2/3/9/0/23903170/bm-d-16-00490r1.pdf" style="font-weight: bold;">Download File</a></div>
+</div>
+
+<hr style="clear: both; width: 100%; visibility: hidden"></hr></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:51px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:28.252427184466%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
+<a>
+<img src="uploads/2/3/9/0/23903170/adaptive-sample.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:71.747572815534%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title" style="text-align:left;"><font size="5">Locally Adaptive Spline Interpolation</font></h2>
+
+<div class="paragraph">Rex Ying, Xiaobai Sun,&nbsp;&#8203;Alexandros-Stavros Iliopoulos</div>
+
+<div class="paragraph" style="text-align:left;">In this paper, I give a framework and an efficient algorithm for constructing a high order, non-standard spline from low order splines.&nbsp;<br />Using this technique, we provide an improvement over the traditional spline technique such that the result can be more efficiently adaptive to local updates,&nbsp;resilient to outliers, naturally parallel and has less error propagation, while still preserving the smoothness conditions of the spline. An inhomogeneous spline refers to a spline whose piecewise functions do not have the same order.</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		</div>
+					</div>
+
+	</div>
+</div>
+
+</div>
+
+				</div>
+				<!-- end main-wrap -->
+
+				<!-- footer-wrap -->
+				<div id="footer-wrap">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+				<!-- end footer-wrap -->
+
+			</div>
+		</div>
+	</div>
+	<!-- end wrapper -->
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="files/theme/plugins.js" ></script>
+	<script type="text/javascript" src="files/theme/custom.js"></script>
+	<script type="text/javascript" src="files/theme/mobile.js"></script>
+
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>
